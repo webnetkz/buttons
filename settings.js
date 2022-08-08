@@ -4,7 +4,7 @@ let app = 'Web-stopwatch';
     email = 'dbqqbq@gmail.com';
     date = '2021-12-22';
 
-document.head.title = app;
+document.title = app;
 
 let app_names = document.querySelectorAll('.app_name');
 let companies = document.querySelectorAll('.company');
