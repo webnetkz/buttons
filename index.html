@@ -22,6 +22,7 @@
           }
           * {
             --widthContent: 1200px;
+            transition-duration: 300ms;
           }
           .contentContainer {
             display: flex;
@@ -61,8 +62,26 @@
           <div class="resultBtn">
             <button id="result">Button</button>
           </div>
-          <input type="checkbox" id="borderCheck">
-          <input type="range" id="borderWidth">
+          <div class="controls">
+            <div class="border">
+              <input type="checkbox" id="borderCheck">
+              <input type="range" id="borderWidth" value="1" max="20">
+              <input type="color" id="borderColor">
+              <select id="borderStyle">
+                <option value="none">None</option>
+                <option value="hidden">Hidden</option>
+                <option value="dotted">Dotted</option>
+                <option value="dashed">Dashed</option>
+                <option value="solid">Solid</option>
+                <option value="double">Double</option>
+                <option value="groove">Groove</option>
+                <option value="ridge">Ridge</option>
+                <option value="inset">Inset</option>
+                <option value="outset">Outset</option>
+              </select>
+            </div>
+          </div>
+          
         </div>
       </div>
       
@@ -80,10 +99,22 @@
       let result = document.querySelector('#result');
       let borderCheck = document.querySelector('#borderCheck');
       let borderWidth = document.querySelector('#borderWidth');
+      let borderColor = document.querySelector('#borderColor');
+      let borderStyle = document.querySelector('#borderStyle');
       borderCheck.addEventListener("click", () => {
         console.log(result)
-        result.style.borderWidth = borderWidth.value;
+        result.style.borderWidth = borderWidth.value+'px';
       });
+      borderWidth.addEventListener("change", () => {
+        result.style.borderWidth = borderWidth.value+'px';
+      });
+      borderColor.addEventListener("change", () => {
+        result.style.borderColor = borderColor.value;
+      });
+      borderStyle.addEventListener("change", () => {
+        result.style.borderStyle = borderStyle.value;
+      });
+      
     </script>
     <script src="settings.js"></script>
   </body>
