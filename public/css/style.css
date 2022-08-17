@@ -24,6 +24,85 @@ html, body {
   margin: 5px;
 }
 .groupHiddenBlock {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 5px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 7px;
+  margin: 5px;
+  height: 50px;
+}
+* {
+  --widthContent: 1200px;
+  transition-duration: 300ms;
+}
+.contentContainer {
+  display: flex;
+  justify-content: center;
+}
+.content {
+  width: var(--widthContent);
+  max-width: var(--widthContent);
+  min-width: var(--widthContent);
+  box-sizing: border-box;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.resultBtn, .resultCode {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  border-radius: 7px;
+  margin: 20px 0px;
+  flex-direction: column;
+}
+.resultBtn button {
+  font-size: 2rem;
+}
+.controls {
+  display: flex;
+  flex-direction: column;
+}
+.controls > div {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.border {
+  width: 80vw;
+  height: 140px;
+}
+.text {
+  width: 80vw;
+  height: 190px;
+}
+.controls > div > * {
+  margin-top: 10px;
+}
+.controls > div > div {
+  position: relative;
+}
+.controls > div > div > input,select {
+  position: absolute;
+  right: 0px;
+}
+hr {
+  border-color: rgba(255, 255, 255, 0.1);
+  margin: 3px 0px;
+}
+.copy {
+  width: 20px;
+  margin: 5px;
+  margin-left: 80vw;
+}
+code {
+  padding: 10px;
+  border:1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
 }
