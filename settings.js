@@ -1,8 +1,8 @@
-let app = 'Web-stopwatch';
+let app = 'Creater buttons';
     company = 'WebNet.kz';
-    app_code = 'com.webnet.webstopwatch';
+    app_code = 'com.webnet.createrbuttons';
     email = 'dbqqbq@gmail.com';
-    date = '2021-12-22';
+    date = '2022-08-02';
 
 document.title = app;
 

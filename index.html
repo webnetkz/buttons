@@ -11,8 +11,8 @@
         <meta name="keywords" content="buttons html, webnet, webnet.kz, PWA">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="index, follow">
-        <link rel="shortcut icon" href="./public/img/logos/64.png" type="image/png">
-        <link rel="apple-touch-icon" href="./public/img/logos/512.png">
+        <link rel="shortcut icon" href="./public/img/logo.png" type="image/png">
+        <link rel="apple-touch-icon" href="./public/img/logo.png">
         <link rel="stylesheet" type="text/css" href="./public/css/style.css">
         <!-- <link rel="stylesheet" href="./public/css/mobileStyle.css"> -->
         <link rel="manifest" href="./public/json/manifest.json"> 
@@ -42,6 +42,10 @@
                 <input type="range" id="borderWidth" value="1" max="20">
               </div>
               <div>
+                Border-radius
+                <input type="range" id="borderRadius" value="1" max="20">
+              </div>
+              <div>
                 Color
                 <input type="color" id="borderColor">
               </div>
@@ -65,42 +69,42 @@
             <div class="text group">
               <div class="groupHeader">
                 <h4 style="display: inline">Text</h4>
-                <input type="checkbox" id="textCheck">
               </div>
               <hr>
               <div>
                 Size
-                <input type="range" id="textSize" value="1" max="20">
+                <input type="range" id="textSize" value="30" min="30" max="80">
               </div>
               <div>
                 Font-family
                 <select id="textStyle">
                   <option value="none">None</option>
                   <option value="sans">Sans</option>
-                  <option value="sanss">Sans-serif</option>
-                  <option value="mono">Monospace</option>
+                  <option value="Sans-serif">Sans-serif</option>
+                  <option value="Monospace">Monospace</option>
                 </select>
               </div>
               <div style="margin-bottom: 5px;">
                 Color
                 <input type="color" id="textColor">
               </div>
-              <div>
+              <!-- <div>
                 Padding
                 <input type="range" id="textPadding" value="1" max="20">
               </div>
               <div>
                 Margin
                 <input type="range" id="textMargin" value="1" max="20">
-              </div>
+              </div> -->
             </div>
           </div>
           
           <div class="resultCode">
-            <img src="./public/img/copy.png" class="copy">
+            <img src="./public/img/copy.png" class="copy" id="copy">
             <hr>
-            <code>
-              
+            <button id="getRes">Get result</button>
+            <hr>
+            <code id="code">
             </code>
           </div>
 
