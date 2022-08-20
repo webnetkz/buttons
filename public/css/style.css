@@ -76,11 +76,11 @@ html, body {
 }
 .border {
   width: 80vw;
-  height: 170px;
+  height: 160px;
 }
 .text {
   width: 80vw;
-  height: 140px;
+  height: 170px;
 }
 .controls > div > * {
   margin-top: 10px;

@@ -44,6 +44,9 @@ textStyle.addEventListener("change", () => {
 textColor.addEventListener("change", () => {
   result.style.color = textColor.value;
 });
+textBg.addEventListener("change", () => {
+  result.style.background = textBg.value;
+});
 
 getRes.addEventListener("click", () => {
   code.innerText = "";
@@ -55,6 +58,7 @@ getRes.addEventListener("click", () => {
   code.innerText += "font-size: " +textSize.value+";\n";
   code.innerText += "font-family: " +textStyle.value+";\n";
   code.innerText += "color: " +textColor.value+";\n";
+  code.innerText += "background: " +textBg.value+";\n";
   code.innerText += "}\n";
 });
 
